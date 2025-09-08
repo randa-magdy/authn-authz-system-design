@@ -150,7 +150,7 @@ sequenceDiagram
     alt Verification Success
         S->>Cache: Mark code as used/delete
         S->>DB: Create or get user record
-        DB->>S: User record saved
+        DB->>S: User record saved / got
         S->>S: Generate JWT access token (15–30 min)
         S->>S: Generate JWT refresh token (7–30 days)
         S->>S: Sign tokens with private key
