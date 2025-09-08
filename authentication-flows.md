@@ -128,8 +128,8 @@ sequenceDiagram
     
     S->>S: Validate email format
     S->>S: Generate 6-digit code + expiry
-    S->>Cache: Store code with email key
-    Cache->>S: Code stored
+    S->>Cache: Store {email, code, expiry, attempts=0}
+    Cache->>S: stored
     
     S->>ES: Send verification email (async)
     ES->>U: Email with verification code
