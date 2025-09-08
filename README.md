@@ -34,7 +34,7 @@ The system must support **multiple authentication methods**, enforce **role-base
 
 ## 2. Goals
 - Support **secure login** via Email/Password, OTP (email verification), and Social Login (OAuth2).  
-- Implement **RBAC** for different user roles (Guest, Customer, Host, Admin).  
+- Implement **RBAC** for different user roles (Guest, Customer, Admin).  
 - Protect sensitive data (bookings, payments, user profiles).  
 - Ensure **scalability** with token-based authentication and Redis caching.  
 - Maintain **compliance** with GDPR/CCPA (user privacy, data retention).  
@@ -46,7 +46,7 @@ The system must support **multiple authentication methods**, enforce **role-base
 ### 3.1 Functional Requirements
 - User Registration & Login (Email/Password, OTP, OAuth2).
 - Password reset and account recovery.
-- Role-based access control (Guest, Customer, Host, Admin).
+- Role-based access control (Guest, Customer, Admin).
 - Multi-Factor Authentication (MFA) (optional).
 - Guest Checkout (booking without account).
 - Audit logging for login, logout, password resets, and role changes.
