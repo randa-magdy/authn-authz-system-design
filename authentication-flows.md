@@ -103,7 +103,7 @@ sequenceDiagram
 
 #### 🔹 Authentication Success
 
-* Create or update user record in the database (activate if pending).
+* Create or get user record in the database.
 * Generate **JWT access token** (15–30 minutes).
 * Generate **JWT refresh token** (7–30 days).
 * Sign tokens with the server’s **private key**.
@@ -149,7 +149,7 @@ sequenceDiagram
     
     alt Verification Success
         S->>Cache: Mark code as used/delete
-        S->>DB: Create or update user record
+        S->>DB: Create or get user record
         DB->>S: User record saved
         S->>S: Generate JWT access token (15–30 min)
         S->>S: Generate JWT refresh token (7–30 days)
