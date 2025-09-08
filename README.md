@@ -94,7 +94,7 @@ The system must support **multiple authentication methods**, enforce **role-base
 * **Token Strategy:** JWT (Access + Refresh)
 * **MFA & Emails:** External provider (SendGrid)
 
-### 5.2 Authentication Flows
+### 5.2 Authentication & Password Reset Flows
 
 * Email + Password (Admin Login)
 * Email + Verification Code (OTP)
