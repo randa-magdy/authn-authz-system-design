@@ -205,7 +205,7 @@ The system must support **multiple authentication methods**, enforce **role-base
 ### 6.2 ERD Diagram
 
 ```mermaid
-erDiagramerDiagram
+ erDiagram
     USER {
         int user_id PK
         string email "unique"
@@ -267,6 +267,7 @@ erDiagramerDiagram
 
 ### 6.3 SQL Scripts
 
+```sql
 -- ==========================================
 -- Table: USER
 -- ==========================================
@@ -341,7 +342,7 @@ CREATE TABLE "Auditing" (
     status VARCHAR(50),
     created_at TIMESTAMP DEFAULT NOW()
 );
-
+```
 ---
 
 ## 7. API Design
