@@ -1,7 +1,4 @@
 # 🔐 Authentication & Authorization System Design  
-### Booking Platform (Hotels / Flights)
-
----
 
 ## 📌 Content List
 1. [Vision](#vision)
