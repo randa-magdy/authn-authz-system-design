@@ -119,12 +119,6 @@ The system must support **multiple authentication methods**, enforce **role-base
 
 ### 6.1 Data Model
 
-Here’s your **updated 6.1 Data Model section**, fully integrated with the detailed attributes, relationships, and purposes you provided:
-
----
-
-### 6.1 Data Model
-
 ### **User**
 
 * **Attributes:**
